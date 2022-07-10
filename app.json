@@ -1,0 +1,87 @@
+{
+    "name": "𝘚𝘰𝘜𝘳𝘊𝘦 𝘗𝘭𝘈𝘯𝘒",
+    "description": "تنصــيب سـورس بـلآنـك آلـرسمـي # قـنآت آلسـورس { S_Plank }",
+    "logo": "https://telegra.ph/file/05696d479024918863e93.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "video stream",
+        "pyrogram"
+    ],
+    "website": "https://t.me/S_Plank",
+    "repository": "https://github.com/Hmd290/S_Plank",
+    "success_url": "https://t.me/S_Plank",
+    "env": {
+        "API_ID": {
+            "description": "ضـع آلآيبــي آيـدي { هنـآ }",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "ضـع آلآيبــي هـآش { هنـآ }",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "ضـع تـوكـن آلبـوت { هنـآ }",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "ضـع معـرف آلبـوت { هنـآ }",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "ضـع معـرف آلبـوت { هنـآ }",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "ضـع يـوزر آلمسـآعـد { هنـآ }",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "ضـع كـود تيـرمكـس { هنـآ }",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "ضـع آيـدي مطـور { هنـآ }",
+            "required": true
+        },
+        "GROUP_SUPPORT": {
+            "description": "ضـع يـوزر كـروبـك { هنـآ }",
+            "required": true,
+            "value": "IXXXXXT"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ضـع يـوزر قنــآتـك { هنـآ }",
+            "required": true,
+            "value": "S_Plank"
+        },
+        "OWNER_NAME": {
+            "description": "ضـع يـوزر آلمطـور { هنـآ }",
+            "required": true,
+            "value": "HmD"
+        },
+        "ALIVE_NAME": {
+            "description": "لآ تغيـرهـآ { ! }",
+            "required": true,
+            "value": "S_Plank"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
